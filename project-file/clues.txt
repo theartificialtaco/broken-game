@@ -1,0 +1,39 @@
+Clue 1: 
+In the player's code it resides,
+A mischievous "var" that hides.
+It causes mayhem, creates a mess,
+Controls reversed, it's anyone's guess.
+Fix left to right, that is your test.
+Fast or slow, it tells you where to go.
+Seek it in the player's code,
+Then flip its sign to play once more. 
+Minus and plus - two sides of the same coin.
+But which one is right?
+
+
+Clue 2: 
+A camera that sees but refuses to roam,
+Bound by a function, a static home.
+Starts with "func", encased in brackets' pair,
+The source of the problem is hidden there.
+Seek the line beneath, false lies the root,
+Change it to true, the camera will shoot.
+What's the remedy for the stationary view?
+
+
+Clue 3:
+In the final scene, a message gone astray,
+A label that speaks but doesn't say.
+"Game over" it should, but alas it does not,
+Click on the culprit, fix the plot.
+What's the method to set the script right?
+
+
+Clue 4: 
+In the realm of the player, a function lost,
+Altering points, at what cost?
+Starts with "func", the brackets hold it tight,
+Therein lies the clue, the script's slight.
+Look for the sign, the subtracting snake,
+Turn it into a cross, points to make.
+What's the solution to cease the deduction?

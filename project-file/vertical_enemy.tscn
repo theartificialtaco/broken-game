@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://sprites/fly_enemy.png" type="Texture" id=1]
+[ext_resource path="res://vertical_enemy.gd" type="Script" id=2]
+[ext_resource path="res://slime_001.ogg" type="AudioStream" id=3]
+[ext_resource path="res://thrusterFire_000.ogg" type="AudioStream" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 16 )
+
+[node name="vertical_enemy" type="Area2D"]
+position = Vector2( 0, -80 )
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2, 0 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="slime" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -20.0
+autoplay = true
+max_distance = 200.0
+
+[node name="fire" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+max_distance = 200.0
+
+[connection signal="area_entered" from="." to="." method="_on_still_enemy_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_still_enemy_body_entered"]
